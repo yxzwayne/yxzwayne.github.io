@@ -10,6 +10,21 @@
     <link rel="stylesheet" href="main.css" />
   </head>
 
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-TTNDJX6B0P"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-TTNDJX6B0P");
+  </script>
+
   <script>
     function toggleVisibility(id) {
       var element = document.getElementById(id);
@@ -54,7 +69,7 @@
       </p>
       <p>
         My dream work-life is 50% basic research, 50% applied engineering work,
-        and 50% reading papers and books. 
+        and 50% reading papers and books.
       </p>
 
       <p>
@@ -81,7 +96,10 @@
 
       <p class="bold">Other things I'm up to</p>
       <p>
-        <a id="metal" href="#metal" onclick="toggleVisibility('metaltransformer')"
+        <a
+          id="metal"
+          href="#metal"
+          onclick="toggleVisibility('metaltransformer')"
           >Coding machine learning algorithms and processes on Metal.
         </a>
         <span id="metaltransformer" style="display: none">
