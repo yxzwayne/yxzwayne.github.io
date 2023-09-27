@@ -73,3 +73,22 @@ p {
 li {
   margin-bottom: 5px;
 }
+
+.comingsoon {
+  position: relative;
+  display: inline-block;
+}
+
+.comingsoon:hover::after {
+  content: "Curating. Coming right up!";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #151a3c;
+  color: #fff;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
