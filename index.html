@@ -3,9 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <title>Wayne Zhang</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"
+    />
     <style>
       body {
         margin: 0;
+        font-size: 15px;
         display: flex;
         justify-content: center;
         min-height: 100vh;
@@ -14,46 +19,144 @@
       }
 
       .container {
-        padding-top: 8vh;
-        max-width: 900px;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        max-width: 40vw;
         width: 100%;
         text-align: left;
       }
 
       .bold {
         font-weight: bold;
-        margin: 20px 0 20px 0;
+        margin: 40px 0 10px 0;
+      }
+
+      /* navbar css */
+      .floating-nav {
+        font-family: "Roboto Slab", "Inter", "Helvetica Neue", Verdana,
+          sans-serif;
+        position: fixed;
+        top: 45%;
+        right: 5vw;
+        padding: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        background: rgb(255, 255, 255);
+        border: 2px solid rgb(208, 208, 208);
+        box-shadow: rgb(208, 208, 208, 0.4) 2px 2px;
+        border-radius: 10px;
+      }
+
+      .floating-nav a {
+        color: #555;
+        text-decoration: none;
+        font-size: 1em;
+        transition: 0.3s ease;
+        padding: 6px 22px;
+      }
+
+      .floating-nav a:hover {
+        color: black;
+        text-decoration: underline;
+      }
+
+      li {
+        margin-bottom: 5px;
       }
     </style>
   </head>
 
+  <script>
+    function toggleVisibility(id) {
+      var element = document.getElementById(id);
+      if (element.style.display === "none") {
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+    }
+  </script>
+
   <body>
+
+    <!--<nav class="floating-nav">
+      <a href="index.html">Main</a>
+      <a href="#thoughts">Thoughts</a>
+    </nav>-->
+
     <div class="container">
-      <h1>Wayne 张宇轩</h1>
+      <h2>Wayne 张宇轩</h2>
       <p>Machine learning engineer and researcher</p>
       <p>
-        Interest: machine learning, unsupervised learning, human preference,
-        large language models
+        Second-year MS student at Halıcıoğlu Data Science Institute, UC San
+        Diego
+      </p>
+      <p>Interest:</p>
+      <ul>
+        <li>Simple methods of deep learning</li>
+        <li>Human preference</li>
+        <li>Unsupervised learning</li>
+        <li>Large language models</li>
+      </ul>
+      <p style="margin-top: 22px">
+        "Enthusiasm matters!" --
+        <a style="color: black" href="https://nat.org" target="_blank"
+          >Nat Friedman</a
+        >
       </p>
       <p>
-        My dream work-life would be 50% basic research, 50% applied engineering
-        work, and 50% reading papers and books
+        My dream work-life is 50% basic research, 50% applied engineering work,
+        and 50% reading papers and books.
       </p>
-      <p>Hire me if you can use someone who actualizes that passionately.</p>
-      <p class="bold">Currently working on</p>
-      <ul>
-        <li>
-          HIV epistasis understanding with deep learning methods, focusing on
-          variational inference.
-        </li>
-        <li>Semi-supervised classfication and label discovery.</li>
-        <li></li>
-      </ul>
 
-      <p>Other Lores</p>
-      <div>
+      <p>
+        If you can use someone who actualizes this passionately,
+        <a
+          href="https://docs.google.com/document/d/1WvAzdkLABhVhFg_obpQOVvnrxugeK3CzhhpIKiWL3qw/edit?usp=sharing"
+          >hire me</a
+        >.
+      </p>
+
+      <p class="bold">Currently working on</p>
+      <p>
+        Drug-resistance mutation tracking and epistasis understanding with deep
+        learning methods, focusing on variational inference. Ongoing work at the
+        <a target="_blank" href="https://lyumkis.salk.edu/">Lyumkis Lab</a>,
+        advised by Dr. Biswas.
+      </p>
+      <p>Learning human preference through classification methods.</p>
+      <p>Semi-supervised classfication and label discovery.</p>
+
+      <p>
+        <a href="#">My paper reading backlog</a>. Expect it to grow fast but go
+        at a slow pace while I do something with it.
+      </p>
+
+      <p class="bold">Misc things</p>
+      <p>宇宙の彼方で</p>
+      <p>
+        Neural scaling law implicates an issue with the amount of data at our
+        dispose, but for training models. Have we capitalized on our internal
+        monologues? What would be the outcomes if we capture the alpha on this?
+        I am founding the Luxun Lab to work on this.
+      </p>
+
+      <p class="bold">
+        <a href="#" onclick="toggleVisibility('lore')">Other lores</a>
+      </p>
+      <div id="lore" style="display: none">
         <p>Worked as a full-stack developer in the middle of New Jersey</p>
-        <p>Studied Informatics at University of Washington</p>
+        <p>
+          Studied Informatics at University of Washington. <a>Reflection</a>
+        </p>
+        <p>
+          Born in Guangzhou, moved to Beijing. Dropped my mother tongue
+          (Cantonese), currently picking it back up.
+        </p>
+        <p></p>
+        <p></p>
+        <p></p>
       </div>
 
       <p style="display: none">
