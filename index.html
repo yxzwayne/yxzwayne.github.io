@@ -7,71 +7,14 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"
     />
-    <style>
-      body {
-        margin: 0;
-        font-size: 15px;
-        display: flex;
-        justify-content: center;
-        min-height: 100vh;
-        font-family: -apple-system, "Inter", "Helvetica Neue", "Segoe UI",
-          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
-      }
-
-      .container {
-        padding-top: 5vh;
-        padding-bottom: 5vh;
-        max-width: 40vw;
-        width: 100%;
-        text-align: left;
-      }
-
-      .bold {
-        font-weight: bold;
-        margin: 40px 0 10px 0;
-      }
-
-      /* navbar css */
-      .floating-nav {
-        font-family: "Roboto Slab", "Inter", "Helvetica Neue", Verdana,
-          sans-serif;
-        position: fixed;
-        top: 45%;
-        right: 5vw;
-        padding: 4px;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        background: rgb(255, 255, 255);
-        border: 2px solid rgb(208, 208, 208);
-        box-shadow: rgb(208, 208, 208, 0.4) 2px 2px;
-        border-radius: 10px;
-      }
-
-      .floating-nav a {
-        color: #555;
-        text-decoration: none;
-        font-size: 1em;
-        transition: 0.3s ease;
-        padding: 6px 22px;
-      }
-
-      .floating-nav a:hover {
-        color: black;
-        text-decoration: underline;
-      }
-
-      li {
-        margin-bottom: 5px;
-      }
-    </style>
+    <link rel="stylesheet" href="main.css" />
   </head>
 
   <script>
     function toggleVisibility(id) {
       var element = document.getElementById(id);
       if (element.style.display === "none") {
-        element.style.display = "block";
+        element.style.display = "inline";
       } else {
         element.style.display = "none";
       }
@@ -79,14 +22,17 @@
   </script>
 
   <body>
-
     <!--<nav class="floating-nav">
       <a href="index.html">Main</a>
       <a href="#thoughts">Thoughts</a>
     </nav>-->
 
     <div class="container">
-      <h2>Wayne 张宇轩</h2>
+      <div class="header">
+        <h2>Wayne 张宇轩</h2>
+        <img class="profile-image" src="pfp.jpeg" alt="Profile Picture" />
+      </div>
+
       <p>Machine learning engineer and researcher</p>
       <p>
         Second-year MS student at Halıcıoğlu Data Science Institute, UC San
@@ -95,8 +41,9 @@
       <p>Interest:</p>
       <ul>
         <li>Simple methods of deep learning</li>
-        <li>Human preference</li>
-        <li>Unsupervised learning</li>
+        <li>
+          Learning methods for human preference (study notes coming soon!)
+        </li>
         <li>Large language models</li>
       </ul>
       <p style="margin-top: 22px">
@@ -125,7 +72,6 @@
         <a target="_blank" href="https://lyumkis.salk.edu/">Lyumkis Lab</a>,
         advised by Dr. Biswas.
       </p>
-      <p>Learning human preference through classification methods.</p>
       <p>Semi-supervised classfication and label discovery.</p>
 
       <p>
@@ -133,7 +79,19 @@
         at a slow pace while I do something with it.
       </p>
 
-      <p class="bold">Misc things</p>
+      <p class="bold">Other things I'm up to</p>
+      <p>
+        <a href="#" onclick="toggleVisibility('metaltransformer')"
+          >Coding machine learning algorithms and processes on Metal.
+        </a>
+        <span id="metaltransformer" style="display: none"
+          >Doing this with the belief that writing naive transformer operations
+          as CUDA kernels should be within the reach of transfer learning.</span
+        >
+      </p>
+      <p>Learning human preference through classification methods.</p>
+
+      <p class="bold">Misc</p>
       <p>宇宙の彼方で</p>
       <p>
         Neural scaling law implicates an issue with the amount of data at our
@@ -146,17 +104,20 @@
         <a href="#" onclick="toggleVisibility('lore')">Other lores</a>
       </p>
       <div id="lore" style="display: none">
+        <p></p>
         <p>Worked as a full-stack developer in the middle of New Jersey</p>
         <p>
-          Studied Informatics at University of Washington. <a>Reflection</a>
+          Studied Informatics at University of Washington.
+          <a>Reflection in writing</a>
+        </p>
+        <p>
+          Skiied with the Husky Ski Team for a winter, sadly did not make the
+          flip.
         </p>
         <p>
           Born in Guangzhou, moved to Beijing. Dropped my mother tongue
           (Cantonese), currently picking it back up.
         </p>
-        <p></p>
-        <p></p>
-        <p></p>
       </div>
 
       <p style="display: none">

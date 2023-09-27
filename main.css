@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: -apple-system, "Inter", "Helvetica Neue", "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.container {
+  padding-top: 1vh;
+  padding-bottom: 4vh;
+  max-width: 36vw;
+  width: 100%;
+  text-align: left;
+}
+
+.bold {
+  font-weight: bold;
+  margin: 20px 0 10px 0;
+}
+
+/* navbar css */
+.floating-nav {
+  font-family: "Roboto Slab", "Inter", "Helvetica Neue", Verdana, sans-serif;
+  position: fixed;
+  top: 45%;
+  right: 5vw;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background: rgb(255, 255, 255);
+  border: 2px solid rgb(208, 208, 208);
+  box-shadow: rgb(208, 208, 208, 0.4) 2px 2px;
+  border-radius: 10px;
+}
+
+.floating-nav a {
+  color: #555;
+  text-decoration: none;
+  font-size: 1em;
+  transition: 0.3s ease;
+  padding: 6px 22px;
+}
+
+.floating-nav a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-image {
+  float: right;
+  height: 100px; /* 4 times the font size */
+  width: auto; /* maintain aspect ratio */
+  padding-right: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
