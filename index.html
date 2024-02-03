@@ -25,66 +25,36 @@
   <div class="container">
     <nav>
       <a href="index.html"><img class="profile-image" src="assets/adj.png"></a>
-      <ul>
+      <!-- <ul>
         <li>
           <a href="https://yxzwayne.com/gaia-prime">Blog</a>
         </li>
         <li>
           <a href="resume/Yuxuan_Zhang_Resume.pdf" target="_blank">Resume</a>
         </li>
-      </ul>
+      </ul> -->
     </nav>
-    <p class="bold" style="font-size: 2rem;">Yuxuan Zhang • 张宇轩 • Wayne</p>
+    <p class="bold" style="font-size: 1.2rem; padding-bottom: 0.8rem;">Yuxuan Zhang • 张宇轩 • Wayne</p>
     <div style="margin-bottom: 30px;">
-      <a href="https://github.com/yxzwayne" target="_blank">github.com/yxzwayne</a> |
-      <a href="https://twitter.com/yxzwayne">twitter.com/yxzwayne</a>
+      <a href="https://github.com/yxzwayne" target="_blank">github</a> |
+      <a href="https://twitter.com/yxzwayne">twitter</a> |
+      <a href="https://yxzwayne.com/gaia-prime">thoughts</a> |
+      <a href="resume/Yuxuan_Zhang_Resume.pdf" target="_blank">resume</a>
     </div>
-    <p>Machine learning engineer and researcher</p>
-    <p>
-      Second-year MS student at Halıcıoğlu Data Science Institute, UC San
-      Diego
+
+
+    <p>AI data scientist working with langauge data and protein sequences</p>
+    <p>Interested in scaling law, data synthesis, preference learning and assistants</p>
+    <p>MS in Data Science</p>
+    <p><a href="#" onclick="openModal('assets/trance!!!.jpg')" style="display: inline-block;">Trance and
+        competitiveness</a>
     </p>
-    <p>Going off from software development to machine learning and agents, I specialize in large langauge models and
-      applied deep learning modeling.
-    </p>
 
-    <p class="bold">Currently</p>
-    <ul>
-      <li>Fine-tuning large language models and building local inference programs</li>
-      <li>Building deep learning models for epistatic understanding. With
-        <a target="_blank" href="https://lyumkis.salk.edu/">Lyumkis Lab</a>,
-        advised by Dr. Biswas.
-      </li>
-      <li>Getting into preference learning methods, focusing on probabilistic approaches.</li>
-    </ul>
 
-    <p>I'm on the job market for full-time data scientist and machine learning engineer positions!</p>
-    <a href="#" onclick="openModal('assets/trance!!!.jpg')" style="display: inline-block;">See why you should hire me</a>
-
-    <div id="myModal" class="modal">
-      <span class="close" onclick="closeModal()">&times;</span>
+    <div id="myModal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
       <img class="modal-content" id="img01">
       <div id="caption"></div>
-    </div>
-
-    <p class="bold">
-      <a href="#" onclick="toggleVisibility('lore')">Other facts</a>
-    </p>
-    <div id="lore" style="display: none">
-      <p>MapReduce enthusiast and preacher</p>
-      <p>Worked as a full-stack developer in the middle of New Jersey.</p>
-      <p>
-        Studied Informatics at University of Washington.
-        <a>Reflection in writing.</a>
-      </p>
-      <p>
-        Skiied with the Husky Ski Team for a winter, sadly did not make the
-        flip.
-      </p>
-      <p>
-        Born in Guangzhou, moved to Beijing. Dropped my mother tongue
-        (Cantonese), currently picking it back up.
-      </p>
     </div>
 
     <p style="display: none">
@@ -108,6 +78,7 @@
   var modal = document.getElementById("myModal");
   var img = document.getElementById("yourImg");
   var modalImg = document.getElementById("img01");
+
   img.onclick = function () {
     modal.style.display = "block";
     modalImg.src = this.src;
@@ -123,6 +94,13 @@
   function closeModal() {
     var modal = document.getElementById("myModal");
     modal.style.display = "none";
+  }
+
+  // Add event listener to close modal when clicking anywhere on the page
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      closeModal();
+    }
   }
 </script>
 
