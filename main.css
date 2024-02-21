@@ -18,8 +18,12 @@ body {
 }
 
 p {
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin: 8px 0 8px 0;
+  line-height: 1.2em;
+}
+
+.custom-li-p {
+  margin-left: 20px;
 }
 
 a {
@@ -30,7 +34,7 @@ a {
   flex-direction: column;
   justify-content: center;
   display: flex;
-  max-width: 600px;
+  max-width: 728px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -86,6 +90,11 @@ nav ul li a {
 
 li {
   margin-bottom: 5px;
+}
+
+.social-icon {
+  font-size: 24px; /* Adjust as needed */
+  margin-right: 10px; /* Adjust as needed */
 }
 
 /********** image modal **********/
