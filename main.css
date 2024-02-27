@@ -1,8 +1,14 @@
+@font-face {
+  font-family: "Berkeley Mono";
+  src: url("assets/fonts/BerkeleyMono-Regular.woff2");
+}
+
 body {
   margin: 0;
   font-size: 16px;
+  letter-spacing: -0.05em;
   min-height: 100vh;
-  font-family: -apple-system, "Inter", "Helvetica Neue", "Segoe UI", Roboto,
+  font-family: "Berkeley Mono", -apple-system, "Inter", "Helvetica Neue", "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
   width: auto;
   background-color: #f7f5f1;
