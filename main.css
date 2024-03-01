@@ -11,20 +11,12 @@ body {
   font-family: "Berkeley Mono", -apple-system, "Inter", "Helvetica Neue", "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
   width: auto;
-  background-color: #f7f5f1;
-  /* dark grey */
+  background-color: #fbfbf9;
   color: #222;
-  /* white */
-  padding: 1rem 5rem;
-}
-
-.container {
-  /* max-width: 1024px; */
+  padding: 2rem 4rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 4rem;
-  /* margin: 0 auto; */
+  justify-content: start;
 }
 
 /********** navbar **********/
@@ -60,14 +52,15 @@ h1 {
   margin-bottom: 0.5em;
 }
 
-p, a {
-  margin: 5px 0 5px 0;
-  font-size: 16px;
-}
-
 a {
   color: #058098;
   text-decoration: none;
+}
+
+p,
+a {
+  margin: 5px 0 5px 0;
+  font-size: 16px;
 }
 
 .header {
@@ -84,6 +77,10 @@ a {
   border-radius: 12px;
 }
 
+.homepage-divider {
+  margin: 20px 0;
+}
+
 li {
   font-size: 16px;
   margin-bottom: 5px;
@@ -97,6 +94,22 @@ li {
   /* Adjust as needed */
 }
 
+/* Responsiveness */
+@media (max-width: 728px) {
+  body {
+    padding: 1rem 1.5rem;
+  }
+  nav {
+    padding: 1rem 0 1rem 0;
+  }
+  p {
+    margin: 12px 0 12px 0;
+  }
+  .homepage-divider {
+    margin: 10px 0;
+  }
+}
+
 /********** image modal **********/
 /* 
 used for: 
@@ -104,6 +117,8 @@ used for:
  */
 .modal {
   display: none;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -112,15 +127,17 @@ used for:
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.95);
-  /* darker black */
 }
 
 .modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin: auto;
   display: block;
-  width: 72vw;
+  width: 95vw;
   height: auto;
-  padding: 80px;
 }
 
 .close {
