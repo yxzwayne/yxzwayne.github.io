@@ -4,9 +4,8 @@
 }
 
 body {
-  margin: 0;
   font-size: 16px;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.02em;
   min-height: 100vh;
   font-family: "Berkeley Mono", -apple-system, "Inter", "Helvetica Neue", "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
@@ -17,6 +16,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  margin: 0 auto 0 auto;
+  max-width: 650px;
+  line-height: 1.5;
 }
 
 /********** navbar **********/
@@ -78,7 +80,7 @@ a {
 }
 
 .homepage-divider {
-  margin: 20px 0;
+  margin: 12px 0;
 }
 
 li {
@@ -99,14 +101,17 @@ li {
   body {
     padding: 1rem 1.5rem;
   }
+
   nav {
     padding: 1rem 0 1rem 0;
   }
+
   p {
     margin: 12px 0 12px 0;
   }
+
   .homepage-divider {
-    margin: 10px 0;
+    margin: 8px 0;
   }
 }
 
