@@ -4,7 +4,7 @@
 }
 
 body {
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: -0.02em;
   min-height: 100vh;
   font-family: "Berkeley Mono", -apple-system, "Inter", "Helvetica Neue", "Segoe UI", Roboto,
@@ -62,7 +62,7 @@ a {
 p,
 a {
   margin: 5px 0 5px 0;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .header {
@@ -84,7 +84,7 @@ a {
 }
 
 li {
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 5px;
 }
 
