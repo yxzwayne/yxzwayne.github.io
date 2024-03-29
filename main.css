@@ -4,7 +4,7 @@
 }
 
 body {
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: -0.02em;
   min-height: 100vh;
   font-family: "Berkeley Mono", -apple-system, "Inter", "Helvetica Neue", "Segoe UI", Roboto,
@@ -25,24 +25,26 @@ body {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 30px 0 30px 0;
+  justify-content: center;
+  padding: 20px 0 20px 0;
   /* font-size: medium; */
   font-weight: 500;
 }
 
-nav ul {
+.sides-menu {
   display: flex;
-  list-style: none;
-  padding: 0;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
+.side-button {
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  color: #222;
+  font-weight: 500;
 }
 
 /* ********** */
@@ -55,7 +57,6 @@ a {
 p,
 a {
   margin: 5px 0 5px 0;
-  /* font-size: 14px; */
 }
 
 .header {
@@ -65,25 +66,25 @@ a {
 }
 
 .profile-image {
-  float: right;
+  float: left;
   display: block;
-  height: 96px;
+  height: 72px;
   width: auto;
   border-radius: 12px;
 }
 
 .homepage-divider {
-  margin: 12px 0;
+  margin: 10px 0;
 }
 
 li {
-  /* font-size: 14px; */
   margin-bottom: 5px;
 }
 
 /* Responsiveness */
 @media (max-width: 728px) {
   body {
+    font-size: 14px;
     padding: 1rem 1.5rem;
   }
 
@@ -96,7 +97,7 @@ li {
   }
 
   .homepage-divider {
-    margin: 8px 0;
+    margin: 6px 0;
   }
 }
 
