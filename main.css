@@ -9,36 +9,17 @@ body {
   min-height: 100vh;
   font-family: "Berkeley Mono", -apple-system, "Inter", "Helvetica Neue", "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
-  background-color: #fbfbf9;
-  color: #222;
+  background-color: #141313;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   padding: 0 5rem;
-  max-width: 550px;
+  max-width: 728px;
   line-height: 1.5;
 }
 
-.home-container {
-  min-height: auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
-
-.col {
-  width: auto;
-}
-
-.left {
-  max-width: 640px;
-}
-
-.right {
-  max-width: 420px;
-}
 
 /********** navbar **********/
 nav {
@@ -56,7 +37,6 @@ nav {
 }
 
 .profile-image {
-  float: left;
   display: block;
   height: 96px;
   width: auto;
@@ -65,11 +45,9 @@ nav {
 }
 
 .nav-right-container {
-  flex: 0;
   display: flex;
   flex-direction: row;
-  flex-grow: 1;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   gap: 2rem;
 }
@@ -86,9 +64,9 @@ nav {
   justify-content: center;
   border: 0;
   white-space: nowrap;
-  /* Prevents text wrapping */
   min-width: 160px;
-  /* Adjust this value based on your needs */
+  background-color: #fff;
+  color: #000;
 }
 
 #side3Btn img,
@@ -101,32 +79,34 @@ nav {
 /* ********** */
 
 h1 {
+  font-weight: 400;
   margin: 0;
 }
 
 h2 {
   font-size: 1.1rem;
   font-weight: 700;
+  text-decoration: underline;
 }
 
 a {
-  color: #058098;
+  color: #5addee;
   text-decoration: none;
 }
 
 p,
 a {
-  margin: 5px 0 5px 0;
+  margin: 5px 0;
 }
-
 
 .homepage-divider {
   margin: 10px 0;
+  border-color: #fff;
 }
 
 ul,
 li {
-  margin: 0 0 6px 0;
+  margin: 0 0 6px;
 }
 
 /* Responsiveness */
@@ -140,23 +120,17 @@ li {
     font-size: 1.1rem;
   }
 
+  h2 {
+    font-size: 1.07rem;
+  }
+
   nav {
     margin-top: 1rem;
     flex-direction: column;
   }
 
-
   p {
-    margin: 10px 0 10px 0;
-  }
-
-  .col {
-    margin: 0 auto;
-    max-width: auto;
-  }
-
-  .right {
-    max-width: auto;
+    margin: 10px 0;
   }
 
   .homepage-divider {
@@ -169,10 +143,6 @@ li {
 }
 
 /********** image modal **********/
-/* 
-used for: 
-- hire me image (lol sorry)
- */
 .modal {
   display: none;
   justify-content: center;
@@ -202,7 +172,7 @@ used for:
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #f1f1f1;
+  color: #fff;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -220,4 +190,5 @@ used for:
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #fff;
 }
