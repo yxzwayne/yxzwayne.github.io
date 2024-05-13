@@ -41,8 +41,8 @@ nav {
   position: sticky;
   width: 100%;
   top: 0;
-  background-color: #1c1c1ddd;
   z-index: 999;
+  background-color: #1c1c1ddd;
   box-shadow: 0 1.2rem 1.2rem #1c1c1ddd;
 }
 
@@ -60,7 +60,7 @@ nav {
 }
 
 .nav-btn {
-  padding: 0.4rem 0.5rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 0.5rem;
   text-decoration: none;
   color: #ccc;
@@ -68,7 +68,7 @@ nav {
 
 .nav-btn:hover,
 .nav-btn.active {
-  color: #fff;
+  color: #e6e3e3;
   background-color: #2c2c2e;
 }
 
@@ -101,6 +101,12 @@ a {
   color: #ccc;
 }
 
+.under-construction {
+  padding: 0.5rem;
+  background-color: #333;
+  border-radius: 0.5rem;
+}
+
 .footer {
   padding: 0.5rem 1rem;
   display: flex;
@@ -113,4 +119,52 @@ a {
 
 .footer p {
   color: #bbb;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #f7f4f4;
+    color: #444;
+  }
+
+  nav {
+    background-color: #f7f4f4dd;
+    box-shadow: 0 1.2rem 1.2rem #f7f4f4dd;
+  }
+
+  .nav-btn {
+    color: #333;
+  }
+
+  .nav-btn:hover,
+  .nav-btn.active {
+    color: #555;
+    background-color: #d3d3d3;
+  }
+
+  .under-construction {
+    background-color: #e6e4d5;
+  }
+
+  a {
+    color: #333;
+  }
+
+  .footer {
+    color: #444;
+  }
+
+  .footer p {
+    color: #666;
+  }
+
+  ::selection {
+    background: #5a5a5a;
+    color: #e3e3e3;
+  }
+
+  ::-moz-selection {
+    background: #5a5a5a;
+    color: #e3e3e3;
+  }
 }
