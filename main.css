@@ -4,6 +4,7 @@
 }
 
 body {
+  max-width: 728px;
   font-size: 15px;
   letter-spacing: 0.03em;
   line-height: 1.4;
@@ -13,7 +14,7 @@ body {
   background-color: #1c1c1d;
   color: #ddd;
   margin: 0 auto;
-  padding: 0 1.2rem;
+  padding: 0 2rem;
 
   display: flex;
   flex-direction: column;
@@ -35,7 +36,7 @@ body {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
   padding: 1rem 0;
   position: sticky;
@@ -48,15 +49,8 @@ nav {
 
 @media (max-width: 600px) {
   nav {
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
-}
-
-.nav-left,
-.nav-right {
-  display: flex;
-  align-items: center;
 }
 
 .nav-btn {
@@ -82,8 +76,7 @@ nav {
 
 
 section {
-  max-width: 700px;
-  padding: 1rem 0;
+  padding: 2rem 0;
   margin: 0 auto;
 
   display: flex;
@@ -101,7 +94,7 @@ a {
   color: #ccc;
 }
 
-.under-construction {
+.home-banner {
   padding: 0.5rem;
   background-color: #333;
   border-radius: 0.5rem;
@@ -142,7 +135,7 @@ a {
     background-color: #d3d3d3;
   }
 
-  .under-construction {
+  .home-banner {
     background-color: #e6e4d5;
   }
 
